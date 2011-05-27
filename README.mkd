@@ -1,0 +1,31 @@
+jTrie - a Trie (data structure) in Java
+=======================================
+
+A simple implementation of a character [trie](http://en.wikipedia.org/wiki/Trie)
+in Java. This was pulled out from a larger project that was using it, and it's
+not actively developed any longer. Hopefully it's an inspiration for someone
+else!
+
+From the docs:
+
+TrieNode is a hash-based node for the Trie data structure. There is no limit
+on the number of children, but no data is actually stored in the node itself
+- only its key may be used to determine its value. There is also no record of
+the parent node, so backtracking is not possible in the current
+implementation.
+
+The trie uses compressed tail storage to optimize both memory usage and
+lookup performance.
+
+## Building
+
+The project is set up as a Maven2 repository, so after installing Maven2,
+building the project is as simple as:
+
+    $ mvn compile
+
+## Testing
+
+Once Maven2 is installed, run the test suite like so:
+
+    $ mvn test
